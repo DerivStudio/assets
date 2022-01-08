@@ -1,6 +1,8 @@
 package processor
 
 import (
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -118,10 +120,10 @@ func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 	return nil
 }
 
-func (s *Service) FixAssetInfoJSON(file *file.AssetFile) error {
+func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 	assetInfo := info.AssetModel{}
 
-	err := fileLib.ReadJSONFile(file.Path(), &assetInfo)
+	err := fileLib.ReadJSONFile(f.Path(), &assetInfo)
 	if err != nil {
 		return err
 	}
@@ -137,24 +139,24 @@ func (s *Service) FixAssetInfoJSON(file *file.AssetFile) error {
 	// We need to skip error check to fix asset type if it's incorrect or empty.
 	chain, _ := types.GetChainFromAssetType(assetType)
 
-	expectedTokenType, ok := types.GetTokenType(file.Chain().ID, file.Asset())
+	expectedTokenType, ok := types.GetTokenType(f.Chain().ID, f.Asset())
 	if !ok {
 		expectedTokenType = strings.ToUpper(assetType)
 	}
 
-	if chain.ID != file.Chain().ID || !strings.EqualFold(assetType, expectedTokenType) {
+	if chain.ID != f.Chain().ID || !strings.EqualFold(assetType, expectedTokenType) {
 		assetInfo.Type = &expectedTokenType
 		isModified = true
 	}
 
 	// Fix asset id.
-	assetID := file.Asset()
+	assetID := f.Asset()
 	if assetInfo.ID == nil || *assetInfo.ID != assetID {
 		assetInfo.ID = &assetID
 		isModified = true
 	}
 
-	expectedExplorerURL, err := coin.GetCoinExploreURL(file.Chain(), file.Asset())
+	expectedExplorerURL, err := coin.GetCoinExploreURL(f.Chain(), f.Asset())
 	if err != nil {
 		return err
 	}
@@ -166,8 +168,59 @@ func (s *Service) FixAssetInfoJSON(file *file.AssetFile) error {
 	}
 
 	if isModified {
-		return fileLib.CreateJSONFile(file.Path(), &assetInfo)
+		return fileLib.CreateJSONFile(f.Path(), &assetInfo)
 	}
+
+	return nil
+}
+
+func (s *Service) FixTokenList(f *file.AssetFile) error {
+	file, err := os.Open(f.Path())
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	buf := bytes.NewBuffer(nil)
+	if _, err = buf.ReadFrom(file); err != nil {
+		return err
+	}
+
+	var model TokenList
+	err = json.Unmarshal(buf.Bytes(), &model)
+	if err != nil {
+		return err
+	}
+
+	filteredTokens := make([]TokenItem, 0)
+
+	for _, token := range model.Tokens {
+		assetPath := path.GetAssetInfoPath(f.Chain().Handle, token.Address)
+
+		infoFile, err := os.Open(assetPath)
+		if err != nil {
+			return err
+		}
+
+		buf := bytes.NewBuffer(nil)
+		if _, err = buf.ReadFrom(infoFile); err != nil {
+			return err
+		}
+
+		infoFile.Close()
+
+		var infoAsset info.AssetModel
+		err = json.Unmarshal(buf.Bytes(), &infoAsset)
+		if err != nil {
+			return err
+		}
+
+		if infoAsset.GetStatus() == "active" {
+			filteredTokens = append(filteredTokens, token)
+		}
+	}
+
+	model.Tokens = filteredTokens
 
 	return nil
 }

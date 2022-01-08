@@ -399,6 +399,10 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 		if token.Decimals != uint(*infoAsset.Decimals) {
 			compErr.Append(fmt.Errorf("field 'decimals' differs from %s", assetPath))
 		}
+
+		if infoAsset.GetStatus() != "active" {
+			compErr.Append(fmt.Errorf("token '%s' is not active, remove it from %s", token.Address, f.Path()))
+		}
 	}
 
 	if compErr.Len() > 0 {

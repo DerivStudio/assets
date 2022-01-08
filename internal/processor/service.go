@@ -53,7 +53,7 @@ func (s *Service) GetValidator(f *file.AssetFile) []Validator {
 	case file.TypeTokenListFile:
 		return []Validator{
 			jsonValidator,
-			{Name: "Token list (if assets from list present in chain)", Run: s.ValidateTokenListFile},
+			{Name: "Token list", Run: s.ValidateTokenListFile},
 		}
 	case file.TypeChainInfoFolder:
 		return []Validator{
@@ -83,7 +83,7 @@ func (s *Service) GetFixers(f *file.AssetFile) []Fixer {
 	case file.TypeAssetInfoFile:
 		return []Fixer{
 			jsonFixer,
-			{Name: "Fixing asset info.json files", Run: s.FixAssetInfoJSON},
+			{Name: "Fixing asset info.json files", Run: s.FixAssetInfo},
 		}
 	case file.TypeValidatorsListFile:
 		return []Fixer{
@@ -96,6 +96,10 @@ func (s *Service) GetFixers(f *file.AssetFile) []Fixer {
 	case file.TypeChainLogoFile, file.TypeAssetLogoFile, file.TypeValidatorsLogoFile, file.TypeDappsLogoFile:
 		return []Fixer{
 			{Name: "Resizing and compressing logo images", Run: s.FixLogo},
+		}
+	case file.TypeTokenListFile:
+		return []Fixer{
+			{Name: "Removing inactive tokens", Run: s.FixTokenList},
 		}
 	}
 
