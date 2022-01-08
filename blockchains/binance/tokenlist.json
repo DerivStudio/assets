@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-01-07T01:30:04.539853",
+    "timestamp": "2022-01-08T19:08:42.050723",
     "tokens": [
         {
             "asset": "c714",
@@ -947,16 +947,6 @@
             "symbol": "ANKR",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ANKR-E97/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c714_tARN-71B",
-            "type": "BEP2",
-            "address": "ARN-71B",
-            "name": "Aeron",
-            "symbol": "ARN",
-            "decimals": 8,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ARN-71B/logo.png",
             "pairs": []
         },
         {
@@ -2191,7 +2181,7 @@
         }
     ],
     "version": {
-        "major": 259,
+        "major": 260,
         "minor": 0,
         "patch": 0
     }

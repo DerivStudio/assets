@@ -1,10 +1,9 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-11-09T22:30:24.689Z",
+    "timestamp": "2022-01-08T19:12:07.368744",
     "tokens": [
         {
-            "chainId": 1,
             "asset": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
             "type": "ERC20",
             "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -520,7 +519,6 @@
             ]
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x0000000000085d4780B73119b644AE5ecd22b376",
             "type": "ERC20",
             "address": "0x0000000000085d4780B73119b644AE5ecd22b376",
@@ -661,7 +659,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x0Ae055097C6d159879521C384F1D2123D1f195e6",
             "type": "ERC20",
             "address": "0x0Ae055097C6d159879521C384F1D2123D1f195e6",
@@ -672,7 +669,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
             "type": "ERC20",
             "address": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
@@ -713,7 +709,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
             "type": "ERC20",
             "address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
@@ -734,7 +729,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
             "type": "ERC20",
             "address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
@@ -785,7 +779,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x111111111117dC0aa78b770fA6A738034120C302",
             "type": "ERC20",
             "address": "0x111111111117dC0aa78b770fA6A738034120C302",
@@ -866,16 +859,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x178c820f862B14f316509ec36b13123DA19A6054",
-            "type": "ERC20",
-            "address": "0x178c820f862B14f316509ec36b13123DA19A6054",
-            "name": "Energy Web Token Bridged",
-            "symbol": "EWTB",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x178c820f862B14f316509ec36b13123DA19A6054/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x1796ae0b0fa4862485106a0de9b654eFE301D0b2",
             "type": "ERC20",
             "address": "0x1796ae0b0fa4862485106a0de9b654eFE301D0b2",
@@ -906,7 +889,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x1985365e9f78359a9B6AD760e32412f4a445E862",
             "type": "ERC20",
             "address": "0x1985365e9f78359a9B6AD760e32412f4a445E862",
@@ -957,7 +939,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44",
             "type": "ERC20",
             "address": "0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44",
@@ -978,7 +959,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
             "type": "ERC20",
             "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
@@ -1019,7 +999,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
             "type": "ERC20",
             "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
@@ -1060,16 +1039,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x26a79Bd709A7eF5E5F747B8d8f83326EA044d8cC",
-            "type": "ERC20",
-            "address": "0x26a79Bd709A7eF5E5F747B8d8f83326EA044d8cC",
-            "name": "BankSocial",
-            "symbol": "BSOCIAL",
-            "decimals": 8,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x26a79Bd709A7eF5E5F747B8d8f83326EA044d8cC/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x26c8AFBBFE1EBaca03C2bB082E69D0476Bffe099",
             "type": "ERC20",
             "address": "0x26c8AFBBFE1EBaca03C2bB082E69D0476Bffe099",
@@ -1077,16 +1046,6 @@
             "symbol": "CELL",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x26c8AFBBFE1EBaca03C2bB082E69D0476Bffe099/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x26CE25148832C04f3d7F26F32478a9fe55197166",
-            "type": "ERC20",
-            "address": "0x26CE25148832C04f3d7F26F32478a9fe55197166",
-            "name": "DEXTools",
-            "symbol": "DEXT",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x26CE25148832C04f3d7F26F32478a9fe55197166/logo.png",
             "pairs": []
         },
         {
@@ -1120,7 +1079,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
             "type": "ERC20",
             "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
@@ -1131,7 +1089,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x2ba592F78dB6436527729929AAf6c908497cB200",
             "type": "ERC20",
             "address": "0x2ba592F78dB6436527729929AAf6c908497cB200",
@@ -1242,17 +1199,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
-            "asset": "c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
-            "type": "ERC20",
-            "address": "0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
-            "name": "Small Love Potion",
-            "symbol": "SLP",
-            "decimals": 0,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
             "type": "ERC20",
             "address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
@@ -1303,17 +1249,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D",
-            "type": "ERC20",
-            "address": "0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D",
-            "name": "LTO Network Token",
-            "symbol": "LTO",
-            "decimals": 8,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
             "asset": "c60_t0x408e41876cCCDC0F92210600ef50372656052a38",
             "type": "ERC20",
             "address": "0x408e41876cCCDC0F92210600ef50372656052a38",
@@ -1324,7 +1259,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
             "type": "ERC20",
             "address": "0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
@@ -1455,16 +1389,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x4de2573e27E648607B50e1Cfff921A33E4A34405",
-            "type": "ERC20",
-            "address": "0x4de2573e27E648607B50e1Cfff921A33E4A34405",
-            "name": "Lendroid Support Token",
-            "symbol": "LST",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x4de2573e27E648607B50e1Cfff921A33E4A34405/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42",
             "type": "ERC20",
             "address": "0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42",
@@ -1495,7 +1419,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA",
             "type": "ERC20",
             "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
@@ -1546,7 +1469,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
             "type": "ERC20",
             "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
@@ -1557,7 +1479,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430",
             "type": "ERC20",
             "address": "0x584bC13c7D411c00c01A62e8019472dE68768430",
@@ -1628,7 +1549,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x607F4C5BB672230e8672085532f7e901544a7375",
             "type": "ERC20",
             "address": "0x607F4C5BB672230e8672085532f7e901544a7375",
@@ -1759,7 +1679,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F",
             "type": "ERC20",
             "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
@@ -1770,7 +1689,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
             "type": "ERC20",
             "address": "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
@@ -1781,7 +1699,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x6BFf2fE249601ed0Db3a87424a2E923118BB0312",
             "type": "ERC20",
             "address": "0x6BFf2fE249601ed0Db3a87424a2E923118BB0312",
@@ -1892,17 +1809,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
-            "asset": "c60_t0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14",
-            "type": "ERC20",
-            "address": "0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14",
-            "name": "DoYourTip",
-            "symbol": "DYT",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x761D38e5ddf6ccf6Cf7c55759d5210750B5D60F3",
             "type": "ERC20",
             "address": "0x761D38e5ddf6ccf6Cf7c55759d5210750B5D60F3",
@@ -1993,7 +1899,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
             "type": "ERC20",
             "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
@@ -2014,7 +1919,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x80fB784B7eD66730e8b1DBd9820aFD29931aab03",
             "type": "ERC20",
             "address": "0x80fB784B7eD66730e8b1DBd9820aFD29931aab03",
@@ -2045,7 +1949,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
             "type": "ERC20",
             "address": "0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
@@ -2056,7 +1959,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
             "type": "ERC20",
             "address": "0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
@@ -2087,7 +1989,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
             "type": "ERC20",
             "address": "0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
@@ -2188,7 +2089,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
             "type": "ERC20",
             "address": "0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
@@ -2309,7 +2209,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
             "type": "ERC20",
             "address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
@@ -2390,7 +2289,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
             "type": "ERC20",
             "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
@@ -2431,7 +2329,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
             "type": "ERC20",
             "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
@@ -2452,16 +2349,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3",
-            "type": "ERC20",
-            "address": "0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3",
-            "name": "Pundi X Token",
-            "symbol": "NPXS",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0xa1d6Df714F91DeBF4e0802A542E13067f31b8262",
             "type": "ERC20",
             "address": "0xa1d6Df714F91DeBF4e0802A542E13067f31b8262",
@@ -2469,16 +2356,6 @@
             "symbol": "RFOX",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xa1d6Df714F91DeBF4e0802A542E13067f31b8262/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0xa1eD0364D53394209D61aE8bfdb8Ff50484D8c91",
-            "type": "ERC20",
-            "address": "0xa1eD0364D53394209D61aE8bfdb8Ff50484D8c91",
-            "name": "TeraBlock Token",
-            "symbol": "TBC",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xa1eD0364D53394209D61aE8bfdb8Ff50484D8c91/logo.png",
             "pairs": []
         },
         {
@@ -2572,7 +2449,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
             "type": "ERC20",
             "address": "0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
@@ -2693,16 +2569,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xB4EFd85c19999D84251304bDA99E90B92300Bd93",
-            "type": "ERC20",
-            "address": "0xB4EFd85c19999D84251304bDA99E90B92300Bd93",
-            "name": "Rocket Pool",
-            "symbol": "RPL",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xB4EFd85c19999D84251304bDA99E90B92300Bd93/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
             "type": "ERC20",
             "address": "0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
@@ -2763,7 +2629,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xba100000625a3754423978a60c9317c58a424e3D",
             "type": "ERC20",
             "address": "0xba100000625a3754423978a60c9317c58a424e3D",
@@ -2774,7 +2639,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
             "type": "ERC20",
             "address": "0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
@@ -2855,7 +2719,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xc00e94Cb662C3520282E6f5717214004A7f26888",
             "type": "ERC20",
             "address": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
@@ -2866,7 +2729,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
             "type": "ERC20",
             "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
@@ -3037,7 +2899,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
             "type": "ERC20",
             "address": "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
@@ -3058,16 +2919,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xD2dDa223b2617cB616c1580db421e4cFAe6a8a85",
-            "type": "ERC20",
-            "address": "0xD2dDa223b2617cB616c1580db421e4cFAe6a8a85",
-            "name": "Bondly Token",
-            "symbol": "BONDLY",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xD2dDa223b2617cB616c1580db421e4cFAe6a8a85/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0xd379700999F4805Ce80aa32DB46A94dF64561108",
             "type": "ERC20",
             "address": "0xd379700999F4805Ce80aa32DB46A94dF64561108",
@@ -3078,7 +2929,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xD46bA6D942050d489DBd938a2C909A5d5039A161",
             "type": "ERC20",
             "address": "0xD46bA6D942050d489DBd938a2C909A5d5039A161",
@@ -3129,7 +2979,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7",
             "type": "ERC20",
             "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -3200,7 +3049,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xE41d2489571d322189246DaFA5ebDe1F4699F498",
             "type": "ERC20",
             "address": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
@@ -3421,18 +3269,6 @@
             "pairs": []
         },
         {
-            "chainId": 1,
-            "asset": "c60_t0xF5D669627376EBd411E34b98F19C868c8ABA5ADA",
-            "type": "ERC20",
-            "address": "0xF5D669627376EBd411E34b98F19C868c8ABA5ADA",
-            "name": "Axie Infinity",
-            "symbol": "AXS",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xF5D669627376EBd411E34b98F19C868c8ABA5ADA/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
             "asset": "c60_t0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c",
             "type": "ERC20",
             "address": "0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c",
@@ -3634,7 +3470,7 @@
         }
     ],
     "version": {
-        "major": 14,
+        "major": 15,
         "minor": 0,
         "patch": 0
     }

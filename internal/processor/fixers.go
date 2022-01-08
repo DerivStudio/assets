@@ -193,9 +193,16 @@ func (s *Service) FixTokenList(f *file.AssetFile) error {
 	}
 
 	filteredTokens := make([]TokenItem, 0)
+	var fixedCounter int
 
 	for _, token := range model.Tokens {
-		assetPath := path.GetAssetInfoPath(f.Chain().Handle, token.Address)
+		var assetPath string
+
+		if token.Type == types.Coin {
+			assetPath = path.GetChainInfoPath(f.Chain().Handle)
+		} else {
+			assetPath = path.GetAssetInfoPath(f.Chain().Handle, token.Address)
+		}
 
 		infoFile, err := os.Open(assetPath)
 		if err != nil {
@@ -215,12 +222,17 @@ func (s *Service) FixTokenList(f *file.AssetFile) error {
 			return err
 		}
 
-		if infoAsset.GetStatus() == "active" {
-			filteredTokens = append(filteredTokens, token)
+		if infoAsset.GetStatus() != "active" {
+			fixedCounter++
+			continue
 		}
+
+		filteredTokens = append(filteredTokens, token)
 	}
 
-	model.Tokens = filteredTokens
+	if fixedCounter > 0 {
+		createTokenListJSON(f.Chain(), filteredTokens)
+	}
 
 	return nil
 }
