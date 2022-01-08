@@ -17,6 +17,8 @@ import (
 	"github.com/trustwallet/go-primitives/types"
 )
 
+const activeStatus = "active"
+
 func (s *Service) ValidateJSON(f *file.AssetFile) error {
 	file, err := os.Open(f.Path())
 	if err != nil {
@@ -400,7 +402,7 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 			compErr.Append(fmt.Errorf("field 'decimals' differs from %s", assetPath))
 		}
 
-		if infoAsset.GetStatus() != "active" {
+		if infoAsset.GetStatus() != activeStatus {
 			compErr.Append(fmt.Errorf("token '%s' is not active, remove it from %s", token.Address, f.Path()))
 		}
 	}

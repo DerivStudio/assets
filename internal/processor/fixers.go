@@ -222,7 +222,7 @@ func (s *Service) FixTokenList(f *file.AssetFile) error {
 			return err
 		}
 
-		if infoAsset.GetStatus() != "active" {
+		if infoAsset.GetStatus() != activeStatus {
 			fixedCounter++
 			continue
 		}
@@ -231,7 +231,7 @@ func (s *Service) FixTokenList(f *file.AssetFile) error {
 	}
 
 	if fixedCounter > 0 {
-		createTokenListJSON(f.Chain(), filteredTokens)
+		return createTokenListJSON(f.Chain(), filteredTokens)
 	}
 
 	return nil
